@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLE Portfolio | Azhar Dzakwan Azizi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Dark Theme Styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #c9d1d9; /* Light text */
+            line-height: 1.6;
+        }
+        .text-accent {
+            color: #38bdf8; /* Light blue accent */
+        }
+        .card {
+            background-color: #161b22; /* Slightly lighter dark card background */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+        }
+        .border-line {
+            background-color: #30363d; /* Divider color */
+        }
+        .btn-primary {
+            background-color: #38bdf8;
+            color: #0d1117;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-10 bg-[#0d1117] bg-opacity-95 backdrop-blur-sm p-4 border-b border-line">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-accent hover:text-white transition duration-300">
+                AZHAR DZAKWAN AZIZI
+            </a>
+            <nav class="space-x-4 text-sm font-medium">
+                <a href="#about" class="hover:text-accent transition duration-300">About</a>
+                <a href="#skills" class="hover:text-accent transition duration-300">Skills</a>
+                <a href="#projects" class="hover:text-accent transition duration-300">Projects</a>
+                <a href="#contact" class="hover:text-accent transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- 1. About Section (Emulating the layout) -->
+        <section id="about" class="mb-16 pt-10">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                
+                <div class="w-full md:w-3/4">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">
+                        <span class="text-accent">P</span>roject Portofolio
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-6">
+                        Machine Learning Eng | Data Analytics | Robotics And AI Graduate
+                    </p>
+                    <p class="text-base text-gray-400">
+                        Hello! I'm a graduate with a Bachelor of Engineer Robotics and Artificial Intelligence. I specialize in translating complex AI models—from foundational deep learning to intricate control systems—into scalable, production-grade services using modern MLOps principles. My passion lies at the intersection of intelligent systems and robust software engineering.
+                    </p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-accent hover:text-white transition duration-300">
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="text-accent hover:text-white transition duration-300">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/4 flex justify-center md:justify-end">
+                    <!-- Placeholder for professional photo or avatar -->
+                    <div class="w-36 h-36 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 text-sm font-semibold border-2 border-accent shadow-lg">
+                        Your Photo Here
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="h-px border-line mb-16"></div>
+
+        <!-- 2. Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-white">Core Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                
+                <!-- Category 1: Programming & Frameworks -->
+                <div class="card p-4 rounded-lg">
+                    <h3 class="font-semibold text-accent mb-2">Programming & ML</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li>Python (Advanced)</li>
+                        <li>SQL</li>
+                        <li>PyTorch / TensorFlow</li>
+                        <li>Scikit-learn / Pandas</li>
+                    </ul>
+                </div>
+                
+                <!-- Category 2: MLOps & Deployment -->
+                <div class="card p-4 rounded-lg">
+                    <h3 class="font-semibold text-accent mb-2">MLOps & Ops</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li>Docker (Containerization)</li>
+                        <li>FastAPI / Flask (APIs)</li>
+                        <li>Git / Version Control</li>
+                        <li>Cloud (AWS/GCP Basics)</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: Specialization (Your Robotics/AI Edge) -->
+                <div class="card p-4 rounded-lg">
+                    <h3 class="font-semibold text-accent mb-2">Specialization</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li>Deep Learning (CNNs, Transformers)</li>
+                        <li>Reinforcement Learning (RL)</li>
+                        <li>Computer Vision</li>
+                        <li>Control Systems</li>
+                    </ul>
+                </div>
+
+                 <!-- Category 4: Tools & Utilities -->
+                 <div class="card p-4 rounded-lg">
+                    <h3 class="font-semibold text-accent mb-2">Tools & Data</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li>Jupyter/Colab</li>
+                        <li>MLflow (Experiment Tracking)</li>
+                        <li>CI/CD Basics</li>
+                        <li>Data Warehousing Concepts</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="h-px border-line mb-16"></div>
+
+        <!-- 3. Projects Section (Highlighting End-to-End Capability) -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-white">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project Card 1: Car Insurance Claim Prediction (Your Completed Project) -->
+                <div class="card p-6 rounded-xl border border-line hover:border-accent">
+                    <h3 class="text-xl font-bold mb-2 text-white">Car Insurance Risk Predictor</h3>
+                    <p class="text-sm text-gray-400 mb-4">
+                        A classification and regression project to predict if a policyholder will file a claim and forecast the total claim cost. **Upgraded from Notebook to a fully containerized service.**
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium mb-4">
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">Scikit-learn Pipeline</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">FastAPI</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">Docker</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/elite789/CarInsuranceProject" target="_blank" class="btn-primary px-4 py-2 rounded-lg text-sm">
+                            View Code (GitHub)
+                        </a>
+                        <a href="#deployment-url" class="px-4 py-2 rounded-lg text-sm border border-gray-600 text-gray-300 hover:border-accent transition duration-300">
+                            Live API Endpoint (Demo)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Robotics/RL Specialization Project (Leveraging your Degree) -->
+                <div class="card p-6 rounded-xl border border-line hover:border-accent">
+                    <h3 class="text-xl font-bold mb-2 text-white">Deep Reinforcement Learning for Control</h3>
+                    <p class="text-sm text-gray-400 mb-4">
+                        Implementation of a DQN agent trained to solve the CartPole environment. Focused on managing the training environment and tracking experiment metadata.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium mb-4">
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">PyTorch</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">Reinforcement Learning</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">TensorBoard</span>
+                        <span class="bg-blue-900/50 text-accent px-2 py-1 rounded-full">Python (OOP)</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#github-rl-link" class="btn-primary px-4 py-2 rounded-lg text-sm">
+                            View Code (GitHub)
+                        </a>
+                        <a href="#visualization-link" class="px-4 py-2 rounded-lg text-sm border border-gray-600 text-gray-300 hover:border-accent transition duration-300">
+                            Training Visualization
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Contact/Footer Section -->
+        <section id="contact" class="pt-8 pb-4 border-t border-line text-center">
+            <h3 class="text-2xl font-bold mb-4 text-white">Let's Connect</h3>
+            <p class="text-gray-400 mb-4">
+                I am actively seeking Machine Learning Engineer roles. Feel free to reach out to discuss my projects or potential opportunities.
+            </p>
+            <a href="mailto:your.email@example.com" class="text-accent hover:text-white font-medium transition duration-300">
+                your.email@example.com
+            </a>
+            <p class="text-xs text-gray-600 mt-6">
+                &copy; 2024 [Your Name]. Built with Tailwind CSS.
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>
